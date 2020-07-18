@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="main.css"/>
+  <title>Compu Global Hyper Meganet</title>
+</head>
+<header>
+    <h1 id="title">Compu Global Hyper Meganet Survey Form</h1>
+    <p id="description"><b>Satisfaction survey on wireless internet service in your home.</b></p>
+  </header>
+  <form id="survey-form">
+    <div>
+      <label for="name" id="name-label">Name
+        <input id="name" type="text" name="name" placeholder="Enter your name" required>
+      </label>
+    </div>
+    <div>
+      <label for="email" id="email-label">Email
+        <input id="email" type="email" name="email" placeholder="Enter your Email" required>
+      </label>
+    </div>
+    <div>
+      <label for="number" id="number-label">Age
+        <input id="number" type="number" name="number" min="18" max="99" placeholder="Age" required>
+      </label>
+    </div>
+    <p>Do you use wireless internet service at home?</p>
+    <label for="yes">
+      <input type="radio" id="yes" name="yesno" value="yes" checked>Yes
+    </label>
+    <label for="no">
+      <input type="radio" id="no" name="yesno" value="no">No
+    </label>
+
+    <p>How often do you use wireless internet service in your home?</p>
+    <select id="dropdown">
+      <option disabled selected hidden>Select your option...</option>
+      <option>All the time</option>
+      <option>Sometimes</option>
+      <option>Very Little</option>
+      <option>Never</option>
+    </select>
+    <p>With which devices do you usually connect to the wifi? Multiple answer.</p>
+    <label class="br" for="Movil">
+      <input type="checkbox" name="device" id="Movil" value="MovilPhone" checked>Movil Phone
+    </label>
+    <label class="br" for="Laptop">
+      <input type="checkbox" name="device" id="Laptop" value="Laptop">Laptop
+    </label>
+    <label class="br" for="tablet">
+      <input type="checkbox" name="device" id="tablet" value="Tablet">Tablet
+    </label>
+    <label class="br" for="smarttv">
+      <input type="checkbox" name="device" id="smarttv" value="SmartTV">Smart TV
+    </label>
+    <p>When you connect to Wi-Fi, from anywhere in your home, is your connection, and how long does it last, is it completely satisfactory?</p>
+    <label for="yes2">
+      <input type="radio" id="yes2" name="connection" value="yes" checked>Yes
+    </label>
+    <label for="no2">
+      <input type="radio" id="no2" name="connection" value="no">No
+    </label>
+    <p>Have you experienced that the internet slows down or the connection of your device disappears if you move away from some specific area?</p>
+    <label for="yes3">
+      <input type="radio" id="yes3" name="signal" value="yes" checked>Yes
+    </label>
+    <label for="no3">
+      <input type="radio" id="no3" name="signal" value="no">No
+    </label>
+    <p>What is your overall assessment of the wireless internet service in your home? Rate from 0 to 5, bearing in mind that 0 is "very dissatisfied" and 5 "very satisfied"</p>
+    <label for="five">
+      <input type="radio" id="five" name="satisfaction" value="5" checked>5
+    </label>
+    <label for="four">
+      <input type="radio" id="four" name="satisfaction" value="4">4
+    </label>
+    <label for="three">
+      <input type="radio" id="three" name="satisfaction" value="3">3
+    </label>
+    <label for="two">
+      <input type="radio" id="two" name="satisfaction" value="2">2
+    </label>
+    <label for="one">
+      <input type="radio" id="one" name="satisfaction" value="1">1
+    </label>
+    <label for="zero">
+      <input type="radio" id="zero" name="satisfaction" value="0">0
+    </label>
+    <p>Please, in a few words, tell us the reason or reasons for your previous assessment.</p>
+    <textarea name="comment" rows="4" cols="40" placeholder="Enter your comment here..."></textarea>
+    <p>What do you suggest to improve wireless internet service in your home?</p>
+    <textarea name="suggest" rows="4" cols="40" placeholder="Enter your suggest here..."></textarea>
+    <div>
+      <button id="submit" type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
